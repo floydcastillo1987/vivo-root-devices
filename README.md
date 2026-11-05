@@ -33,6 +33,7 @@ GhostLock（futex-PI requeue UAF）、KGSL 物理读写、posix-timer UAF、Dirt
 
 ## 目录
 
+- [docs/ROUTES.md](docs/ROUTES.md) — CVE-2026-98260 深挖：posix-cpu-timer UAF → uid-0 → KSU late-load 逐阶段复盘
 - [docs/ROOT_CAUSE.md](docs/ROOT_CAUSE.md) — 五个家族的根因、受影响路径与修复方向
 - [docs/DEFENSE.md](docs/DEFENSE.md) — vivo 厂商防线对照与加固建议
 - [docs/DETECTION.md](docs/DETECTION.md) — 防御侧检测点与 IOC
@@ -45,6 +46,7 @@ GhostLock（futex-PI requeue UAF）、KGSL 物理读写、posix-timer UAF、Dirt
 - [data/models.csv](data/models.csv) — 机型维度事实源
 - [data/cves.csv](data/cves.csv) — CVE 维度事实源
 - [data/schema.md](data/schema.md) — 三份 CSV 的字段与取值约定
+- [tools/detect/detect_root_98260.c](tools/detect/detect_root_98260.c) — 防御侧检测工具（只读，非利用）
 
 ## 合规
 
