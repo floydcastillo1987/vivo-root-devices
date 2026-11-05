@@ -49,6 +49,7 @@
 | status | 验证状态（见下） |
 | evidence | 证据说明与出处 |
 | projects | 关联仓库 `owner/repo`（`;` 分隔） |
+| root_ok | 是否 Root（✅ = author-claimed-verified；❌ = 其余状态） |
 
 ## status 取值集
 
@@ -62,6 +63,7 @@
 | unverified-target | 有目标 / 偏移研究，触发未闭环 |
 | research-in-progress | 研究笔记 / 武器化未完成 |
 | empty-source | 空仓，无可用内容 |
+| patched | 厂商已在更新中修补，漏洞不可用 |
 
 ## 约定
 

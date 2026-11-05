@@ -20,16 +20,36 @@ GhostLock（futex-PI requeue UAF）、KGSL 物理读写、posix-timer UAF、Dirt
 
 ## 机型 × CVE
 
-机器可读总表见 [data/models.csv](data/models.csv) 与 [data/cves.csv](data/cves.csv)，字段定义见 [data/schema.md](data/schema.md)。下表列"公开仓库自述已真机验证"的机型，其余状态（源码可用 / 仅有载荷 / 门控未闭环 / 空仓）请查 CSV 的 `status` 列。
+机器可读总表见 [data/models.csv](data/models.csv) 与 [data/cves.csv](data/cves.csv)，字段定义见 [data/schema.md](data/schema.md)。下表覆盖全部机型：✅ = 仓库或社区自述已真机验证；❌ = 未确认（源码可用 / 仅有载荷 / 门控未闭环 / 已修补 / 空仓）。2026-11-05 全网检索补充。
 
-| 机型 | 代号 | CVE / 家族 | 验证来源 |
-|---|---|---|---|
-| vivo X200 | PD2415 | CVE-2026-43499 GhostLock | xiaohj233 |
-| vivo X100 Ultra | PD2366 | CVE-2026-43499 GhostLock | Romk-a |
-| iQOO Neo7 | PD2231 | CVE-2026-43499 GhostLock | YUE546 |
-| vivo S60 | PD2571 | CVE-2026-98260 posix-timer | molanp |
-| iQOO Neo11 | PD2520 | CVE-2026-43284 DirtyFrag | zenyxx-xd |
-| iQOO Z9 5G | — | CVE-2026-43284 DirtyFrag | ankitrawatgit |
+| 机型 | 代号 | CVE / 家族 | 验证来源 | 是否 Root |
+|---|---|---|---|---|
+| vivo X200 | PD2415 | CVE-2026-43499 GhostLock | xiaohj233 | ✅ |
+| vivo X200s | PD2415 (推断) | CVE-2026-43499 GhostLock | — | ❌ |
+| vivo X100 Ultra | PD2366 | CVE-2026-43499 GhostLock | Romk-a | ✅ |
+| vivo S60 | PD2571 | CVE-2026-98260 posix-timer | molanp | ✅ |
+| vivo X Fold6 | — | CVE-2026-98260 posix-timer | simayang01 | ❌ |
+| vivo Pad5 Pro | PA2573 | CVE-2026-43499 GhostLock | hmascs | ❌ |
+| vivo T4 | I2407 | CVE-2026-43499 GhostLock | sgswzglwlx | ❌ |
+| vivo X200 Pro | PD2405 | CVE-2026-43499 GhostLock / CVE-2026-43284 DirtyFrag | YuKongA/ghostlock-app | ❌ |
+| vivo X200 Ultra | PD2454 | CVE-2026-43499 GhostLock | JoinChang/ghostlock-oneplus | ❌ |
+| vivo Y03t | V2344 | CVE-2026-43499 GhostLock | zenyxx-xd | ❌ |
+| iQOO Neo9 | PD2338 | CVE-2025-21479 KGSL / CVE-2026-43499 GhostLock | linux-tools | ✅ |
+| iQOO Neo8 | PD2301 | CVE-2025-21479 KGSL | Qingizi7 | ❌ |
+| iQOO Neo7 | PD2231 | CVE-2026-43499 GhostLock | YUE546 | ✅ |
+| iQOO Neo7 (V2238A) | PD2238 | CVE-2026-43499 GhostLock | Syerain | ❌ |
+| iQOO Neo9S Pro | PD2339 | CVE-2026-43499 GhostLock | Romk-a | ✅ |
+| iQOO Neo10 Pro+ | V2463A | CVE-2026-43499 GhostLock | Escosis | ❌ |
+| iQOO Neo10 Pro | PD2463 | CVE-2026-98260 posix-timer | molanp | ❌ |
+| iQOO Neo11 | PD2520 | CVE-2026-43284 DirtyFrag / CVE-2026-64560 fanout | zenyxx-xd | ✅ |
+| iQOO 13 | — | CVE-2026-43499 / CVE-2026-98260 | AmarnathCJD | ✅ |
+| iQOO Z9 5G | — | CVE-2026-43284 DirtyFrag | ankitrawatgit | ✅ |
+| iQOO Z9 | PD2361 | CVE-2026-43499 GhostLock | YuKongA/ghostlock-app | ❌ |
+| iQOO Z9 Turbo | PD2352 | CVE-2026-43499 GhostLock | sgswzglwlx | ❌ |
+| iQOO Z10 Turbo Pro | PD2453 | CVE-2026-98260 posix-timer | janewas | ❌ |
+| iQOO 11 | — | CVE-2025-21479 KGSL | — | ❌ |
+| iQOO 11S | — | CVE-2025-21479 KGSL | — | ❌ |
+| iQOO 11 Pro | PD2254 | CVE-2025-21479 KGSL | xianwan1314 | ❌ |
 
 ## 目录
 
