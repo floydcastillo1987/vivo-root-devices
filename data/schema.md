@@ -49,7 +49,7 @@
 | status | 验证状态（见下） |
 | evidence | 证据说明与出处 |
 | projects | 关联仓库 `owner/repo`（`;` 分隔） |
-| root_ok | 是否 Root（✅ = author-claimed-verified；❌ = 其余状态） |
+| root_ok | 是否 Root（✅ = author-claimed-verified，含仓库 / 社区自述或维护者确认；❌ = 其余状态） |
 
 ## status 取值集
 

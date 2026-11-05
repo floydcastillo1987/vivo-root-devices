@@ -3,11 +3,11 @@ vivo X200,PD2415,vivo,—,—,CVE-2026-43499,author-claimed-verified,"xiaohj233 
 vivo X200s,PD2415 (推断),vivo,—,—,CVE-2026-43499,same-kernel-inferred,"与 X200 同代推断，无独立仓库直接佐证",,❌
 vivo X100 Ultra,PD2366/V2366H,vivo,—,—,CVE-2026-43499,author-claimed-verified,"Romk-a README 达到 su -c root","Romk-a",✅
 vivo S60,PD2571/V2571A,vivo,—,—,CVE-2026-98260,author-claimed-verified,"molanp README 列出 timer UAF 全部通过","molanp",✅
-vivo X Fold6,—,vivo,—,—,CVE-2026-98260,empty-source,"simayang01 空仓，仅仓库命名","simayang01",❌
+vivo X Fold6,—,vivo,—,—,CVE-2026-98260,author-claimed-verified,"维护者确认可 root（2026-11-05）；simayang01 空仓无独立佐证","simayang01",✅
 vivo Pad5 Pro,PA2573,vivo,—,6.6.127/6.6.30,CVE-2026-43499,payload-available,"KSuRoot libksu_vivo_pad5pro_*.so + Escosis PA2573.so，无源码无验证","hmascs;Escosis",❌
 vivo T4,I2407,vivo,—,6.1.145,CVE-2026-43499,unverified-target,"sgswzglwlx / zenyxx-xd target.h，门控未触发","sgswzglwlx;zenyxx-xd",❌
 vivo X200 Pro,PD2405,vivo,MT6991,6.6.30,CVE-2026-43499;CVE-2026-43284,unverified-target,"ghostlock-app #569 内核 profile working on hardware；Reddit DirtyFrag KSU 启动崩溃","YuKongA/ghostlock-app",❌
-vivo X200 Ultra,PD2454/V2454A,vivo,—,6.6.89/6.6.127,CVE-2026-43499,patched,"社区自述 GhostLock 曾成功；最新尝鲜更新已修补","JoinChang/ghostlock-oneplus;zenyxx-xd",❌
+vivo X200 Ultra,PD2454/V2454A,vivo,—,6.6.89/6.6.127,CVE-2026-43499,author-claimed-verified,"Reddit 社区自述 CVE-2026-43499 临时 root 成功（旧版固件）+ 维护者确认；最新尝鲜更新已修补","JoinChang/ghostlock-oneplus;zenyxx-xd",✅
 vivo Y03t,V2344,vivo,—,5.15.197,CVE-2026-43499,unverified-target,"RootMyVivo-Payloads payload 支持请求，未验证","zenyxx-xd",❌
 iQOO Neo9,PD2338,iQOO,SM8550 (仓库标注),5.15.197,CVE-2025-21479;CVE-2026-43499;CVE-2026-64560,author-claimed-verified,"linux-tools 16.2.13.2 GhostLock 已真机验证；cve64560 (Zombietick) 研究中","linux-tools;AuroraMythweaver",✅
 iQOO Neo8,PD2301/V2301A,iQOO,SM8475,—,CVE-2025-21479,source-available,"Qingizi7 cheese.c 任意物理读写完整链","Qingizi7",❌
@@ -15,13 +15,13 @@ iQOO Neo7,PD2231/V2231A,iQOO,MT6983,—,CVE-2026-43499,author-claimed-verified,"
 iQOO Neo7 (V2238A),PD2238/V2238A,iQOO,MT6896,5.10,CVE-2026-43499,source-available,"Syerain MT6896 定制链 + QEMU 复现方法","Syerain",❌
 iQOO Neo9S Pro,PD2339/V2339F,iQOO,MT6989,—,CVE-2026-43499,author-claimed-verified,"Reddit 社区自述 CVE-2026-43499 root 成功 (PD2339FA)","Romk-a;zhubaohe123",✅
 iQOO Neo10 Pro+,V2463A,iQOO,—,—,CVE-2026-43499,payload-available,"Escosis V2463A-LPE 锁屏自动提权 prebuilt，无源码","Escosis",❌
-iQOO Neo10 Pro,PD2463,iQOO,—,—,CVE-2026-98260,same-kernel-inferred,"molanp README 列出 PD2463 作为目标，验证以 S60 为准","molanp",❌
+iQOO Neo10 Pro,PD2463,iQOO,—,—,CVE-2026-98260,author-claimed-verified,"molanp README：AkashiCoin PR #1 在 PD2463 完整移植验证（来源标注 Neo10 Pro+）","molanp",✅
 iQOO Neo11 / Neo11 Plus,PD2520,iQOO,—,6.6.127,CVE-2026-43284;CVE-2026-64560,author-claimed-verified,"RootMyVivo 标注 Neo11 DirtyFrag 作者实测；fanout 达 STAGE0 未 root","zenyxx-xd;hmascs",✅
 iQOO 13,—,iQOO,—,—,CVE-2026-43499;CVE-2026-98260,author-claimed-verified,"Reddit 社区自述临时 root 成功（CVE 未明确）；RootMyVivo 列为待实测移植","AmarnathCJD;zenyxx-xd",✅
 iQOO Z9 5G,—,iQOO,—,—,CVE-2026-43284,author-claimed-verified,"ankitrawatgit README 标注 iQOO Z9 5G 测试","ankitrawatgit",✅
 iQOO Z9,PD2361/V2361A,iQOO,SM7550,5.15.197,CVE-2026-43499,unverified-target,"ghostlock-app #586 原语仍在、CLI 已跑，root 未确认","YuKongA/ghostlock-app",❌
 iQOO Z9 Turbo,PD2352,iQOO,—,6.1.124/6.1.145,CVE-2026-43499,unverified-target,"z9t target.h 门控未闭环","sgswzglwlx;zenyxx-xd",❌
-iQOO Z10 Turbo Pro,PD2453/V2453A,iQOO,SM8735,6.6.57,CVE-2026-98260,research-in-progress,"janewas offset 研究 + zenyxx-xd target 引用","janewas;zenyxx-xd",❌
+iQOO Z10 Turbo Pro,PD2453/V2453A,iQOO,SM8735,6.6.57,CVE-2026-98260,author-claimed-verified,"维护者确认可 root（2026-11-05）；janewas 为 offset 研究无独立 root 佐证","janewas;zenyxx-xd",✅
 iQOO 11,—,iQOO,—,—,CVE-2025-21479,source-available,"exploit-intel 分析公开 exploit 源码 exploit_11.c (Android 15)",,❌
 iQOO 11S,—,iQOO,—,—,CVE-2025-21479,source-available,"exploit-intel 分析公开 exploit 源码 exploit_11s.c",,❌
 iQOO 11 Pro,PD2254,iQOO,—,—,CVE-2025-21479,source-available,"xianwan1314 复现笔记（授权研究）","xianwan1314",❌
