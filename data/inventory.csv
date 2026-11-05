@@ -1,0 +1,25 @@
+rank,repository_url,telegram_post,commit,family,verdict,trigger_code,priority,keep_note
+1,https://github.com/233laoliu/mt6985-CVE-2026-43499,https://t.me/GithubRedTeam/95652,695e3c7,GhostLock,offset-research,no,P1,MT6985 target/offset only; core depends on CyberMeowfia
+2,https://github.com/linux-tools/vivo_iqoo_neo_9_root_research_on_CVE-2025-21479,https://t.me/GithubRedTeam/98486,00bba0b,KGSL,binary-only,yes,P1,no source; binaries + KSU package
+3,https://github.com/xiaohj233/ghostlock-x200-root,https://t.me/GithubRedTeam/98504,1194725,GhostLock,full-source,yes,P0,X200 tested; cleanest full chain
+4,https://github.com/Qingizi7/cve-2025-21479_iqooneo8,https://t.me/GithubRedTeam/98856,b634799,KGSL,full-source,yes,P0,cheese.c physical R/W + SELinux off
+5,https://github.com/xx2901318208/ghostlock-cve-2026-64560,https://t.me/GithubRedTeam/99328,,GhostLock,empty,no,P3,empty repo
+6,https://github.com/sgswzglwlx/vivo-root-build,https://t.me/GithubRedTeam/99705,9ba8b36,GhostLock,source-gated,yes,P2,stops at target_preflight
+7,https://github.com/zenyxx-xd/RootMyVivo-Exploit,https://t.me/GithubRedTeam/101884,201ffc0,GhostLock,experimental,yes,P1,afunix paused; cve64560 root unconfirmed
+8,https://github.com/hmascs/KSuRoot,https://t.me/GithubRedTeam/101967,aa475cb,GhostLock,payload-catalog,yes,P0,281 stars; payload corpus + builder source
+9,https://github.com/L-1124/RootMyVivo-Exploit,https://t.me/GithubRedTeam/103670,,GhostLock,empty,no,P3,empty repo
+10,https://github.com/YUE546/IQOO-neo7-ghostlock-43499,https://t.me/GithubRedTeam/103949,59b7cba,GhostLock,full-source,yes,P0,full chain verified on iQOO Neo7
+11,https://github.com/L-1124/RootMyVivo-rs,https://t.me/GithubRedTeam/104056,,GhostLock,empty,no,P3,empty repo
+12,https://github.com/ankitrawatgit/DirtyFrag-Android-Root-Jailbreak,https://t.me/GithubRedTeam/104112,7049e00,DirtyFrag,source-adaptation,yes,P1,DFRoot fork; tested iQOO Z9
+13,https://github.com/zhubaohe123/ghostlock-kit-v2,https://t.me/GithubRedTeam/105114,761d290,GhostLock,post-root,no,P1,post-root KSU/seccomp shim; trigger in Releases
+14,https://github.com/stolas33/vivo-dirtyfrag-root,https://t.me/GithubRedTeam/105414,,DirtyFrag,empty,no,P3,empty repo
+15,https://github.com/Escosis/V2463A-LPE,https://t.me/GithubRedTeam/105722,67a072c,GhostLock,wrapper-prebuilt,yes,P1,lockscreen auto-root; 30 payloads shared with KSuRoot
+16,https://github.com/AuroraMythweaver/iqoo-neo9-ghostlock-pc,https://t.me/GithubRedTeam/105797,64e000f,GhostLock,wrapper-prebuilt,yes,P1,Go orchestration + embedded payload + 71 profiles
+17,https://github.com/zenyxx-xd/RootMyVivo,https://t.me/GithubRedTeam/105826,a3c6681,DirtyFrag,app-source,yes,P0,app + DirtyFrag source; GhostLock payload remote
+18,https://github.com/Romk-a/CVE-2026-43499-ghostlock-vivo-x100-ultra-root,https://t.me/GithubRedTeam/106013,02eaa75,GhostLock,full-source,yes,P0,generalized route/profile engine + vr.ko research
+19,https://github.com/janewas/cve-2026-98260-vivo-gki-research,https://t.me/GithubRedTeam/107197,0796d94,posix-timer,research-notes,no,P2,docs/offsets only
+20,https://github.com/Syerain/cve-2026-43499-mt6896-pd2238,https://t.me/GithubRedTeam/107691,2970a36,GhostLock,full-source,yes,P1,MT6896 custom chain; canonical copy
+21,https://github.com/Syerain/cve-2026-43499-vivo-mt6896,https://t.me/GithubRedTeam/107749,2970a36,GhostLock,duplicate,yes,P3,exact duplicate of #20
+22,https://github.com/molanp/CVE-2026-98260-vivo-s60-poc,https://t.me/GithubRedTeam/108096,636a586,posix-timer,full-source,yes,P0,timer UAF verified; KSU manager seccomp open
+23,https://github.com/AmarnathCJD/CVE-2026-98260-IQOO-13,https://t.me/GithubRedTeam/108260,,posix-timer,empty,no,P3,empty repo
+24,https://github.com/simayang01/CVE-2026-98260-vivo-x-fold6-poc,https://t.me/GithubRedTeam/108443,,posix-timer,empty,no,P3,empty repo
